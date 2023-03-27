@@ -1,25 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
+
+  const nayoks = ['sharukh', 'salman', 'Amir', 'Shahed'];
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+      nayoks.map(nayok => <Name name={nayok}></Name>)
+      }
+
+      <Name></Name>
+      <Name></Name>
+      <Name></Name>
+      <Name></Name>
+
+      <h1>Another</h1>
+      <Name2></Name2>
+      <Name2></Name2>
+      <Name2></Name2>
+      <Name2></Name2>
     </div>
   );
 }
 
+function Name(props) {
+  return (
+    <div className="Tasin">
+      <h1>Name : {props.name}</h1>
+      <p>Age : {props.age}</p>
+    </div>
+  )
+}
+
+function Name2() {
+  return (
+    <div className="Pronoy">
+      <h1>Pronoy</h1>
+      <p>BSc in CSE</p>
+    </div>
+  )
+}
 export default App;

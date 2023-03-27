@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.Tasin{
+  color: rebeccapurple;
+  background-color: #61dafb;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Pronoy{
+  color: blanchedalmond;
+  background-color: black;
+  border: 3px solid aqua;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
